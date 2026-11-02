@@ -1,0 +1,6 @@
+# Allow all search engines to crawl the whole site
+User-agent: *
+Allow: /
+
+# Replace with your live website address
+Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml

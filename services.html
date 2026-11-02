@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search our cake services: custom birthday and wedding cakes, cupcakes and celebration cakes for baby showers, anniversaries and graduations.">
+  <meta name="keywords" content="cake services, custom cakes, birthday cakes, wedding cakes, cupcakes, celebration cakes, baby shower cake, graduation cake">
+  <meta name="author" content="Cake King Bakery">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Cake Services | Custom Cakes, Cupcakes & Celebration Cakes | Cake King Bakery">
+  <meta property="og:description" content="Search our cake services: custom birthday and wedding cakes, cupcakes and celebration cakes for baby showers, anniversaries and graduations.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/cake-king-bakery-logo.jpg">
+  <title>Cake Services | Custom Cakes, Cupcakes & Celebration Cakes | Cake King Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="images/cake-king-bakery-logo.jpg" class="header-logo" alt="Cake King Bakery logo">
+    <span class="brand-name"><span class="crown">&#128081;</span> Cake King Bakery</span>
+  </div>
+  <nav class="nav-link">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title"><i><u>Our Services</u></i></h1>
+
+  <section class="service-tools" aria-label="Search and filter services">
+    <label for="serviceSearch" class="visually-hidden">Search services</label>
+    <input type="search" id="serviceSearch" placeholder="Search services (e.g. wedding, cupcake)..." autocomplete="off">
+
+    <div class="filter-buttons" role="group" aria-label="Filter services by category">
+      <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-filter="cakes" aria-pressed="false">Custom Cakes</button>
+      <button type="button" class="filter-btn" data-filter="cupcakes" aria-pressed="false">Cupcakes</button>
+      <button type="button" class="filter-btn" data-filter="celebration" aria-pressed="false">Celebration</button>
+    </div>
+
+    <div class="sort-bar">
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect">
+        <option value="default">Default order</option>
+        <option value="az">Name A-Z</option>
+        <option value="za">Name Z-A</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+      </select>
+    </div>
+
+    <p id="resultCount" class="result-count" aria-live="polite"></p>
+  </section>
+
+  <div class="cards-container">
+    <div class="card" data-category="cakes">
+      <div class="card-content">
+        <h2><span class="card-icon">&#127874;</span> Custom Cakes</h2>
+        <p>Beautiful cakes made for birthdays and special occasions.</p>
+        <ol>
+          <li>Children's Cake</li>
+          <li>Adult birthday cakes</li>
+          <li>Wedding Cakes</li>
+          <li>Custom themes</li>
+        </ol>
+        <a class="card-btn" href="enquiry.html">Enquire</a>
+      </div>
+    </div>
+
+    <div class="card" data-category="cupcakes">
+      <div class="card-content">
+        <h2><span class="card-icon">&#129473;</span> Cupcakes</h2>
+        <p>Delicious cupcakes made in different flavours and designs.</p>
+        <ol>
+          <li>Individual Cupcakes</li>
+          <li>Cupcakes boxes</li>
+          <li>Different flavours and decorations</li>
+        </ol>
+        <a class="card-btn" href="enquiry.html">Enquire</a>
+      </div>
+    </div>
+
+    <div class="card" data-category="celebration">
+      <div class="card-content">
+        <h2><span class="card-icon">&#127881;</span> Celebration Cakes</h2>
+        <p>Special cakes created to make every celebration memorable.</p>
+        <ol>
+          <li>Baby shower</li>
+          <li>Anniversaries</li>
+          <li>Graduations</li>
+        </ol>
+        <a class="card-btn" href="enquiry.html">Enquire</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-section" aria-label="Cake and cupcake menu">
+    <h2>Cake &amp; Cupcake Menu</h2>
+    <p class="product-intro">Loaded dynamically with JavaScript. Use the search, filters and sorting above, or click an item for details.</p>
+    <div id="productList" class="product-list"></div>
+  </section>
+
+  <div id="noResults" class="no-results" hidden>
+    <p>Sorry, no services match your search.</p>
+    <button type="button" id="resetFilters" class="filter-btn">Reset search</button>
+  </div>
+</main>
+<footer>&copy;ST1053047#DISD1_Cake_King_Bakery</footer>
+</body>
+</html>

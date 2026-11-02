@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Cake King Bakery by email or phone, send us a message and find our bakery on the interactive map in Joburg South, Gauteng.">
+  <meta name="keywords" content="contact cake king bakery, bakery phone number, bakery email, bakery location Joburg South, bakery map Gauteng">
+  <meta name="author" content="Cake King Bakery">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact Us | Cake King Bakery - Email, Phone & Map">
+  <meta property="og:description" content="Contact Cake King Bakery by email or phone, send us a message and find our bakery on the interactive map in Joburg South, Gauteng.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/cake-king-bakery-logo.jpg">
+  <title>Contact Us | Cake King Bakery - Email, Phone & Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="images/cake-king-bakery-logo.jpg" class="header-logo" alt="Cake King Bakery logo">
+    <span class="brand-name"><span class="crown">&#128081;</span> Cake King Bakery</span>
+  </div>
+  <nav class="nav-link">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="contact-container">
+    <div class="contact-left">
+      <h1 class="contact-title"><b><i><u>Contact Information</u></i></b></h1>
+
+      <p class="contact-label"><b><i>Email:</i></b></p>
+      <p>CakeKingBakery@gmail.com</p>
+
+      <p class="contact-label"><b><i>Location:</i></b></p>
+      <p>28217 Modiwane Street, Joburg South, Gauteng</p>
+
+      <p class="contact-label"><b><i>PhoneNumber:</i></b></p>
+      <p>+27 063-101-4209</p>
+
+      <h1 class="contact-us-title"><b><i><u>Contact Us</u></i></b></h1>
+
+      <form id="contactForm" action="mailto:CakeKingBakery@gmail.com" method="post" enctype="text/plain" novalidate>
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Connor" required><br><br>
+
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Magregor" required><br><br>
+
+        <label for="email">email:</label><br>
+        <input type="email" id="email" name="email" placeholder="ConnorMagregor@gmail.com" required><br><br>
+
+        <label for="phone">phone number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="063-638-9414" required><br><br>
+
+        <label for="messageType">type of message:</label><br>
+        <select id="messageType" name="messageType" required>
+          <option value="">-- Select a message type --</option>
+          <option>General question</option>
+          <option>Compliment</option>
+          <option>Complaint</option>
+          <option>Order follow-up</option>
+          <option>Sponsorship or partnership</option>
+        </select><br><br>
+
+        <label for="message">Your message:</label><br>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="contact-right">
+      <img src="images/cake-king-bakery-logo.jpg" alt="CakeKingBakery logo" class="contact-logo">
+    </div>
+  </div>
+  <section class="map-section" aria-label="Bakery location map">
+    <h2>Find Us</h2>
+    <div id="map" role="region" aria-label="Interactive map showing Cake King Bakery"></div>
+    <button type="button" id="locateBtn" class="filter-btn">Show my distance to the bakery</button>
+    <p id="distanceResult" class="result-count" aria-live="polite"></p>
+  </section>
+</main>
+<footer>&copy;ST1053047#DISD1_Cake_King_Bakery</footer>
+</body>
+</html>
